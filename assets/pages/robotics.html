@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Daniel Pereira De Abreu | Data Scientist | Deep Learning | NLP | Computer Vision | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <main id="main">
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Turtle-Bot Frontier Exploration Simulated</h2>
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/turtlebot3-simulation.gif" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/robotics_start.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/robotics_overview.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/robotics_rviz.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/robotics_mask_targets.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/robotics_console_gazebo.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Robotics - Computer Vision</li>
+              <li><strong>Done for</strong>: University Module</li>
+              <li><strong>Project date</strong>: 2023</li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/Daniel2tio/TurtleBot-Frontier" target="_blank">https://github.com/Daniel2tio/TurtleBot-Frontier</a></li>
+            </ul>
+            <p>
+              This project involved using a Turtle-Bot in a simulation to explore unkown maps using frontier exploration and visualise it to the user. 
+            </p>
+            <p>The project is centered around a workspace called catkin_ws, with its primary package frontier_exploration housing nodes and launch files. 
+              Key components include waffle_tf_listener.py, a Python script tracking the robot's position relative to the map, and RvizProjectTwoConfig.rviz,
+               configuring RviZ with markers for robot camera, paths, and frontiers. 
+               The core script, auto_exploration.py, identifies frontier clusters and centroids by subscribing to /map for occupancy grid data, 
+               publishing maps of frontiers, and coordinating navigation to explore the entire map efficiently. 
+               Supporting this is util.py, providing utility functions. 
+               Overall, the project aims to enable autonomous navigation by detecting and exploring frontier regions efficiently,
+                with auto_exploration.py serving as the primary engine for this purpose.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../js/main.min.js"></script>
+</body>
+</html>

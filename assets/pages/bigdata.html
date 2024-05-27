@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Daniel Pereira De Abreu | Data Scientist | Deep Learning | NLP | Computer Vision | Software Developer</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="../css/style.min.css" rel="stylesheet">
+</head>
+<body>
+  <main id="main">
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <h2 class="portfolio-title">Scaling Time-Series Classification in Big Data</h2>
+            <div class="portfolio-details-slider swiper-container">
+              <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/Big Data Main.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/bigdata_methodology.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/bigdata_workflow.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/bigdata_knnvssvm.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/mean feature values.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/parallel_analysis 1.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/DTW_pseudo.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                  <img class="portfolio-images" src="../img/portfolio/bigdata_futurework.png" alt="">
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4 portfolio-info">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Big Data Technologies - Apache Spark</li>
+              <li><strong>Done for</strong>: University Module</li>
+              <li><strong>Project date</strong>: 2024</li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/Daniel2tio/Scaling-Time-Series-Classification" target="_blank">https://github.com/Daniel2tio/Scaling-Time-Series-Classification</a></li>
+            </ul>
+            <p>
+              This study addresses the challenge of efficiently classifying large-scale time series data using traditional methods like KNN with Dynamic Time Warping (DTW) and SVM with DTW, alongside scalable models like Random Forest, and leverages PySpark for parallel processing to enhance scalability and performance in Big Data analytics.
+            </p>
+            <p>Our experiments revealed important insights into the scalability of these methods. KNN with DTW, while effective
+              in capturing temporal dependencies, exhibited limitations as
+              dataset sizes increased. The computational demands associated
+              with pairwise DTW distance calculations posed challenges in
+              terms of processing time and memory utilization. In contrast,
+              SVM and Random Forest demonstrated better scalability characteristics, leveraging kernel methods and ensemble learning
+              techniques for efficient handling of high-dimensional data.
+              Notably, despite the advantages in scalability, it’s essential
+              to acknowledge the sub optimal accuracy scores obtained from
+              all models, reflecting the complexity of the dataset and the
+              inherent challenges in time series classification. The confusion
+              matrix analysis revealed significant misclassifications across
+              different classes, emphasizing the difficulty in capturing distinct patterns accurately within this context.
+              One notable finding was the computational efficiency of
+              scikit-learn’s KNN implementation with PySpark DataFrame
+              compared to the custom KNN with DTW approach. The scikitlearn model exhibited significantly faster execution times,
+              highlighting the optimization potential of distributed computing frameworks like PySpark.
+              Moving forward, there are several avenues for improvement.
+              Exploring deep learning models like N-BEATS for time series classification within a distributed computing environment
+              could offer enhanced scalability and efficiency. Additionally,
+              leveraging techniques such as Locality Sensitive Hashing
+              (LSH) with KNN could expedite nearest neighbor searches and
+              mitigate scalability challenges associated with large datasets.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="../js/main.min.js"></script>
+</body>
+</html>
