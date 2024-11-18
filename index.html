@@ -63,6 +63,18 @@
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="assets/css/style.min.css" rel="stylesheet">
   <link href="assets/css/background.min.css" rel="stylesheet">
+
+
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "1WnzJsjUUpobFMfZe",
+      });
+   })();
+</script>
 </head>
 
 <body>
@@ -908,10 +920,11 @@
         </div>
         <div class="my-3">
           <div class="loading" id="loading">Establishing Connection...</div>
-          <div class="error-message" id="errorMessage">Signal cannot be established with incomplete Data :(</div>
-          <div class="sent-message" id="sentMessage">Your Signal has reached me. Arigatou! :D <img src="assets/img/meow.gif" width="40"></div>
+          <div class="error-message" id="errorMessage">Mail cannot be sent with incomplete Data :</div>
+          <div class="sent-message" id="sentMessage">Your mail has reached me! :D</div>
         </div>
-        <div class="text-center"><button type="button" id="sendSignal">Send Me a Signal <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="40"></button></div>
+        <div class="text-center">
+          <button type="button" onclick="sendMail()" id="sendSignal">Send Mail<img src="assets/img/tororo.gif" width="40"></button></div>
       </form>
 
     </div>
@@ -928,12 +941,6 @@
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-  <script type="text/javascript">
-   (function(){
-      emailjs.init("1WnzJsjUUpobFMfZe");
-   })();
-  </script>
 
   <!--  JS File -->
   <script src="assets/js/main.min.js"></script>
